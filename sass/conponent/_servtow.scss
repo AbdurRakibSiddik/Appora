@@ -1,0 +1,39 @@
+.serv_tow_details{
+    margin-top: 30px;
+    .serv_tow_txt{
+        margin-top: 146px;
+        h3{
+            @include tx(#000, 36px, 500, $ff);
+        }
+        p{
+            @include tx(#000, 18px, 500, $ff);
+            margin-top: 15px;
+        }
+        ul{
+            position: relative;
+            margin-top: 30px;
+            li{
+                margin-left: 30px;
+                @include tx(#000, 14px, 500, $ff);
+                margin-bottom: 15px;
+                i{
+                    position: absolute;
+                    left: 0%;
+                    margin-top: 5px;
+                    color: $bgHover2;
+                }
+            }
+        }
+        a{
+            @include tx(#fff, 24px, 500, $ff);
+            border-radius: 5px;
+            background: $hovercolor;
+            padding: 20px 40px;
+            margin-top: 30px;
+        }
+    }
+    .serv_tow_img{
+        justify-content: end;
+        text-align: right;
+    }
+}

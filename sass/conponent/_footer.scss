@@ -1,0 +1,50 @@
+#footer {
+    background: #222;
+    padding: 60px 0px 30px;
+
+    .foot_top {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #fff;
+        .foot_one {
+            p {
+                @include tx(#fff, 18px, 500, $ff);
+                margin-top: 30px;
+            }
+
+            ul {
+                margin-top: 30px;
+
+                li {
+                    margin-right: 15px;
+
+                    a {
+                        i {
+                            font-size: 20px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .foot_tow {
+            h4 {
+                @include tx(#fff, 24px, 400, $ff);
+            }
+
+            ul {
+                margin-top: 30px;
+
+                li {
+                    @include tx(#fff, 18px, 400, $ff);
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .foot_bottom{
+        p{
+            @include tx(#fff, 14px, 400, $ff); 
+        }
+    }
+}

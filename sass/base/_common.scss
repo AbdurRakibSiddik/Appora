@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+ul,ol{
+list-style: none;
+}
+
+
+// +++++++++++ common head +++++++++++++
+#appora,
+#appora_feature,
+#appora_services,
+#appora_contact{
+  padding: 70px 0;
+  .appora_head{
+    h3{
+      @include tx(#000, 36px, 500, $ff);
+    }
+    p{
+      @include tx(#000, 18px, 500, $ff);
+      padding: 0 170px;
+    }
+  }
+}

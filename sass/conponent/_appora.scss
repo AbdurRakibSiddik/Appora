@@ -1,0 +1,39 @@
+.appora_snd_part {
+    margin-top: 54px;
+
+    .appora_content {
+        padding: 20px 0 58px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+        position: relative;
+        margin-top: 24px;
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            @include bl(0, 0, 100%, 3px, $bghover);
+            opacity: 0;
+            transition: all linear 0.3s;
+
+        }
+
+
+        i {
+            color: $hovercolor;
+            font-size: 100px;
+        }
+
+        h4 {
+            @include tx(#000, 24px, 500, $ff);
+            margin: 15px 0;
+        }
+
+        p {
+
+            @include tx(#000, 18px, 500, $ff);
+        }
+    }
+}

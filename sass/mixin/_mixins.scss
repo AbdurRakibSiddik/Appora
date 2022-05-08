@@ -1,0 +1,15 @@
+@mixin tx($c,$s,$w,$ff){
+    color: $c;
+    font-size: $s;
+    font-weight: $w;
+    font-family: $ff;
+}
+@mixin bl($b,$l,$w,$h,$bg){
+    position: absolute;
+    content: '';
+    bottom: $b;
+    left: $l;
+    width: $w;
+    height: $h;
+    background: $bg;
+}
